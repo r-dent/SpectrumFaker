@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30195FE71CC829D700E9972E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30195FE61CC829D700E9972E /* AppDelegate.swift */; };
+		30195FE91CC829D700E9972E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30195FE81CC829D700E9972E /* ViewController.swift */; };
+		30195FEC1CC829D700E9972E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30195FEA1CC829D700E9972E /* Main.storyboard */; };
+		30195FEE1CC829D700E9972E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30195FED1CC829D700E9972E /* Assets.xcassets */; };
+		30195FF11CC829D700E9972E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30195FEF1CC829D700E9972E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30195FE31CC829D700E9972E /* SpectrumFaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpectrumFaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30195FE61CC829D700E9972E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30195FE81CC829D700E9972E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30195FEB1CC829D700E9972E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30195FED1CC829D700E9972E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30195FF01CC829D700E9972E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30195FF21CC829D700E9972E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30195FE01CC829D700E9972E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30195FDA1CC829D700E9972E = {
+			isa = PBXGroup;
+			children = (
+				30195FE51CC829D700E9972E /* SpectrumFaker */,
+				30195FE41CC829D700E9972E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30195FE41CC829D700E9972E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30195FE31CC829D700E9972E /* SpectrumFaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30195FE51CC829D700E9972E /* SpectrumFaker */ = {
+			isa = PBXGroup;
+			children = (
+				30195FE61CC829D700E9972E /* AppDelegate.swift */,
+				30195FE81CC829D700E9972E /* ViewController.swift */,
+				30195FEA1CC829D700E9972E /* Main.storyboard */,
+				30195FED1CC829D700E9972E /* Assets.xcassets */,
+				30195FEF1CC829D700E9972E /* LaunchScreen.storyboard */,
+				30195FF21CC829D700E9972E /* Info.plist */,
+			);
+			path = SpectrumFaker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30195FE21CC829D700E9972E /* SpectrumFaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30195FF51CC829D700E9972E /* Build configuration list for PBXNativeTarget "SpectrumFaker" */;
+			buildPhases = (
+				30195FDF1CC829D700E9972E /* Sources */,
+				30195FE01CC829D700E9972E /* Frameworks */,
+				30195FE11CC829D700E9972E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpectrumFaker;
+			productName = SpectrumFaker;
+			productReference = 30195FE31CC829D700E9972E /* SpectrumFaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30195FDB1CC829D700E9972E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roman Gille";
+				TargetAttributes = {
+					30195FE21CC829D700E9972E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 30195FDE1CC829D700E9972E /* Build configuration list for PBXProject "SpectrumFaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30195FDA1CC829D700E9972E;
+			productRefGroup = 30195FE41CC829D700E9972E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30195FE21CC829D700E9972E /* SpectrumFaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30195FE11CC829D700E9972E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30195FF11CC829D700E9972E /* LaunchScreen.storyboard in Resources */,
+				30195FEE1CC829D700E9972E /* Assets.xcassets in Resources */,
+				30195FEC1CC829D700E9972E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30195FDF1CC829D700E9972E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30195FE91CC829D700E9972E /* ViewController.swift in Sources */,
+				30195FE71CC829D700E9972E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30195FEA1CC829D700E9972E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30195FEB1CC829D700E9972E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30195FEF1CC829D700E9972E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30195FF01CC829D700E9972E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30195FF31CC829D700E9972E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30195FF41CC829D700E9972E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30195FF61CC829D700E9972E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpectrumFaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rg.SpectrumFaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30195FF71CC829D700E9972E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpectrumFaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rg.SpectrumFaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30195FDE1CC829D700E9972E /* Build configuration list for PBXProject "SpectrumFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30195FF31CC829D700E9972E /* Debug */,
+				30195FF41CC829D700E9972E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30195FF51CC829D700E9972E /* Build configuration list for PBXNativeTarget "SpectrumFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30195FF61CC829D700E9972E /* Debug */,
+				30195FF71CC829D700E9972E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30195FDB1CC829D700E9972E /* Project object */;
+}
