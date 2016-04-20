@@ -12,6 +12,7 @@
 		30195FEC1CC829D700E9972E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30195FEA1CC829D700E9972E /* Main.storyboard */; };
 		30195FEE1CC829D700E9972E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30195FED1CC829D700E9972E /* Assets.xcassets */; };
 		30195FF11CC829D700E9972E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30195FEF1CC829D700E9972E /* LaunchScreen.storyboard */; };
+		30195FF91CC82A3500E9972E /* SpectrumFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30195FF81CC82A3500E9972E /* SpectrumFaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		30195FED1CC829D700E9972E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30195FF01CC829D700E9972E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30195FF21CC829D700E9972E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30195FF81CC82A3500E9972E /* SpectrumFaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpectrumFaker.swift; path = ../Sources/SpectrumFaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				30195FED1CC829D700E9972E /* Assets.xcassets */,
 				30195FEF1CC829D700E9972E /* LaunchScreen.storyboard */,
 				30195FF21CC829D700E9972E /* Info.plist */,
+				30195FF81CC82A3500E9972E /* SpectrumFaker.swift */,
 			);
 			path = SpectrumFaker;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30195FF91CC82A3500E9972E /* SpectrumFaker.swift in Sources */,
 				30195FE91CC829D700E9972E /* ViewController.swift in Sources */,
 				30195FE71CC829D700E9972E /* AppDelegate.swift in Sources */,
 			);
