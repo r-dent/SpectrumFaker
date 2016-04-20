@@ -60,7 +60,7 @@ public class SpectrumFaker: UIView {
     public var spacing: CGFloat = 2.0
     public var barsAlignment: BarsAlignment = .Bottom
     
-    var powerChannels: [Double] {
+    public var powerChannels: [Double] {
         set (newPowerChannels) {
             guard newPowerChannels != _powerChannels else {return}
             
@@ -82,7 +82,7 @@ public class SpectrumFaker: UIView {
         }
     }
     
-    var fakeChannels: Int {
+    public var fakeChannels: Int {
         set (newCount) {
             _fakeChannels = []
             _fakeChannelDeltas = []
