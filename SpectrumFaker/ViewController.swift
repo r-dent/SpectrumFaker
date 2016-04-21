@@ -10,16 +10,16 @@ import UIKit
 
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
-    private var _recorder: AVAudioRecorder?
+    private var _player: AVAudioPlayer?
     private var _displayLink: CADisplayLink?
     
     @IBOutlet weak var spectrum1: SpectrumFaker!
     @IBOutlet weak var spectrum2: SpectrumFaker!
     @IBOutlet weak var spectrum3: SpectrumFaker!
     
-    let audioFilePath = NSTemporaryDirectory().stringByAppendingString("/tmp.caf")
+    let audioFilePath = NSBundle.mainBundle().pathForResource("scratch", ofType: "mp3")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,58 +29,60 @@ class ViewController: UIViewController {
         spectrum1.barsAlignment = .Top
         spectrum1.color = UIColor.lightGrayColor()
         
-        spectrum2.fakeChannels = 100
+        spectrum2.fakeChannels = 80
         spectrum2.barsAlignment = .Middle
         spectrum2.color = UIColor.lightGrayColor()
         
         spectrum3.fakeChannels = 6
         spectrum3.color = UIColor.lightGrayColor()
-        
-        startRecording()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func togglePlayback(sender: AnyObject?) {
+        if let player = _player where player.playing {
+            stopPlaying()
+        }
+        else {
+            playSound()
+        }
+    }
 
     func updateMeter() {
-        _recorder?.updateMeters()
+        _player?.updateMeters()
         
-        let power =  max(0, (_recorder!.averagePowerForChannel(0) + 34) / 34)
+        let push = Float(34.0)
+        let powerA =  max(0, (_player!.averagePowerForChannel(0) + push) / push)
+        let powerB =  max(0, (_player!.averagePowerForChannel(1) + push) / push)
         
-        spectrum1.powerChannels = [Double(power)]
-        spectrum2.powerChannels = [Double(power)]
-        spectrum3.powerChannels = [Double(power)]
+        spectrum1.powerChannels = [Double(powerA), Double(powerB)]
+        spectrum2.powerChannels = [Double(powerA), Double(powerB)]
+        spectrum3.powerChannels = [Double(powerA), Double(powerB)]
     }
     
-    func startRecording() {
+    func playSound() {
         // Early exit when we are already recording.
-        if let rec = _recorder where rec.recording {return}
+        if let player = _player where player.playing {return}
         
         do {
             let session = AVAudioSession.sharedInstance()
-            try session.setCategory(AVAudioSessionCategoryRecord)
+            try session.setCategory(AVAudioSessionCategoryPlayback)
             try session.setActive(true)
         }
         catch {}
         
-        let options: [String:AnyObject] = [
-            AVFormatIDKey: Int(kAudioFormatAppleIMA4),
-            AVSampleRateKey: 44100,
-            AVNumberOfChannelsKey: 1,
-            AVLinearPCMBitDepthKey: 16,
-            AVLinearPCMIsBigEndianKey: 0,
-            AVLinearPCMIsFloatKey: 0
-        ]
-        
-        if let url = NSURL(string: audioFilePath) {
-            _recorder = try? AVAudioRecorder(URL: url, settings: options)
+        if let path = audioFilePath {
+            let url = NSURL.fileURLWithPath(path)
+            _player = try? AVAudioPlayer(contentsOfURL: url)
         }
         
-        if let recorder = _recorder {
-            recorder.meteringEnabled = true
-            recorder.record()
+        if let player = _player {
+            player.delegate = self
+            player.meteringEnabled = true
+            player.play()
             
             // Add a display link to update the waveform
             let displayLink = CADisplayLink(target: self, selector: #selector(updateMeter))
@@ -90,23 +92,22 @@ class ViewController: UIViewController {
         }
     }
     
-    func stopRecording() {
+    func stopPlaying() {
         // Early return if there is no current recording.
-        if _recorder == nil && _displayLink == nil {return}
+        if _player == nil && _displayLink == nil {return}
         
         _displayLink?.invalidate()
         _displayLink = nil
         
-        _recorder?.stop()
-        _recorder = nil
-        
-        do {
-            try AVAudioSession.sharedInstance().setActive(false)
-            try NSFileManager.defaultManager().removeItemAtPath(audioFilePath)
-        }
-        catch {
-            print("Error")
-        }
+        _player?.stop()
+        _player = nil
+    }
+    
+    
+    // MARK: - AVAudioPlayerDelegate
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        stopPlaying()
     }
 
 }

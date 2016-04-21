@@ -41,15 +41,29 @@
                                     <constraint firstAttribute="height" constant="128" id="rqB-Bv-G19"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUr-cJ-mDP">
+                                <rect key="frame" x="238" y="285" width="124" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="5zE-tG-uYN"/>
+                                    <constraint firstAttribute="height" constant="30" id="w96-ue-blv"/>
+                                </constraints>
+                                <state key="normal" title="Toggle playback"/>
+                                <connections>
+                                    <action selector="togglePlayback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5N-pq-iFT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EUF-Hh-nKf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="75x-iC-2ox"/>
                             <constraint firstItem="EUF-Hh-nKf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AJM-ZN-nUj"/>
+                            <constraint firstItem="yUr-cJ-mDP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aku-uQ-yuC"/>
                             <constraint firstItem="EUF-Hh-nKf" firstAttribute="top" secondItem="ddH-ON-D5s" secondAttribute="bottom" constant="24" id="aLK-rI-ySU"/>
                             <constraint firstItem="3Bx-dC-2w0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lXs-jO-jIA"/>
                             <constraint firstItem="3Bx-dC-2w0" firstAttribute="top" secondItem="EUF-Hh-nKf" secondAttribute="bottom" constant="24" id="vm8-HL-PVE"/>
                             <constraint firstItem="ddH-ON-D5s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w11-Ov-6aO"/>
+                            <constraint firstItem="yUr-cJ-mDP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xsc-wC-yE2"/>
                         </constraints>
                     </view>
                     <connections>

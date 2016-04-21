@@ -13,6 +13,7 @@
 		30195FEE1CC829D700E9972E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30195FED1CC829D700E9972E /* Assets.xcassets */; };
 		30195FF11CC829D700E9972E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30195FEF1CC829D700E9972E /* LaunchScreen.storyboard */; };
 		30195FF91CC82A3500E9972E /* SpectrumFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30195FF81CC82A3500E9972E /* SpectrumFaker.swift */; };
+		30FB89961CC8B56700EFAF92 /* scratch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 30FB89951CC8B56700EFAF92 /* scratch.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		30195FF01CC829D700E9972E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30195FF21CC829D700E9972E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30195FF81CC82A3500E9972E /* SpectrumFaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpectrumFaker.swift; path = ../Sources/SpectrumFaker.swift; sourceTree = "<group>"; };
+		30FB89951CC8B56700EFAF92 /* scratch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scratch.mp3; path = ../Resources/scratch.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				30195FED1CC829D700E9972E /* Assets.xcassets */,
 				30195FEF1CC829D700E9972E /* LaunchScreen.storyboard */,
 				30195FF21CC829D700E9972E /* Info.plist */,
+				30FB89951CC8B56700EFAF92 /* scratch.mp3 */,
 				30195FF81CC82A3500E9972E /* SpectrumFaker.swift */,
 			);
 			path = SpectrumFaker;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30195FF11CC829D700E9972E /* LaunchScreen.storyboard in Resources */,
+				30FB89961CC8B56700EFAF92 /* scratch.mp3 in Resources */,
 				30195FEE1CC829D700E9972E /* Assets.xcassets in Resources */,
 				30195FEC1CC829D700E9972E /* Main.storyboard in Resources */,
 			);
@@ -203,7 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -242,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -290,6 +294,7 @@
 				30195FF71CC829D700E9972E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
